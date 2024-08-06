@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workshop</title>
+    <style>
+        /* Reset básico */
+        body, h1, h2, p, form, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fonte padrão */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #333;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            color: #ff6f00;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Estilos principais */
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Seções do workshop */
+        .workshop-info, .agenda, .location, .contact, .options, .registration {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ff6f00;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* Imagens */
+        .workshop-info img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Formulário de inscrição */
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 10px;
+            background: #ff6f00;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #e65c00;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos de localização */
+        .location iframe {
+            width: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Workshop da Ana</h1>
+    </header>
+
+    <main>
+        <section class="workshop-info">
+            <h2>Sobre o Workshop</h2>
+            <img src="https://imagemmental.com.br/wp-content/uploads/2019/01/seu-workshop-all-in.png" alt="Imagem do Workshop">
+            <p><strong>Título:</strong> Desenvolvendo Habilidades Web</p>
+            <p><strong>Descrição:</strong> Aprenda as melhores práticas de desenvolvimento web com um dos principais especialistas da área. O workshop abordará HTML, CSS e JavaScript, com exercícios práticos e estudos de caso.</p>
+            <p><strong>Data:</strong> 15 de Agosto de 2024</p>
+            <p><strong>Hora:</strong> 14:00 - 18:00</p>
+        </section>
+
+        <section class="agenda">
+            <h2>Agenda</h2>
+            <ul>
+                <li><strong>14:00 - 14:30:</strong> Abertura e Introdução</li>
+                <li><strong>14:30 - 15:30:</strong> Sessão 1: HTML e Estruturas Básicas</li>
+                <li><strong>15:30 - 15:45:</strong> Intervalo</li>
+                <li><strong>15:45 - 16:45:</strong> Sessão 2: CSS e Estilo de Páginas</li>
+                <li><strong>16:45 - 17:00:</strong> Intervalo</li>
+                <li><strong>17:00 - 18:00:</strong> Sessão 3: JavaScript e Interatividade</li>
+            </ul>
+        </section>
+
+        <section class="location">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.676221068571!2d-46.65158778443875!3d-23.564727468501354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e1f4e2b9f73%3A0x0!2zMjPCsDI3JzE1LjciTiA0NiwzMzEn!5e0!3m2!1spt-BR!2sbr!4v1615609420572!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+            <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo, SP</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contato</h2>
+            <p><strong>Email:</strong> contato@workshopincrivel.com.br</p>
+            <p><strong>Telefone:</strong> (11) 99999-9999</p>
+        </section>
+
+        <section class="options">
+            <h2>Opções de Workshop</h2>
+            <p>Escolha entre as seguintes opções:</p>
+            <ul>
+                <li>Pacote Básico: Acesso completo às sessões e materiais</li>
+                <li>Pacote Premium: Inclui uma sessão de perguntas e respostas exclusiva</li>
+                <li>Pacote VIP: Sessão de mentoria individual com o instrutor</li>
+            </ul>
+        </section>
+
+        <section class="registration">
+            <h2>Inscreva-se Agora</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Workshop Incrível. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
